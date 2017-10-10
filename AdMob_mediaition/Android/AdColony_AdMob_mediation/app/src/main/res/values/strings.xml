@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AdColony &amp; AdMob mediation</string>
+    <string name="admob_app_id_text">AdMob app ID: </string>
+    <!-- sample id: ca-app-pub-3940256099942544~3347511713 -->
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+
+    <string name="admob_interstitial_adunit_id_text">AdMob Interstitial adunit ID: </string>
+    <!-- sample id: ca-app-pub-3940256099942544/1033173712 -->
+    <string name="admob_interstitial_adunit_id">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="admob_rewarded_video_adunit_id_text">AdMob rewarded video adunit ID: </string>
+    <!-- sample id: ca-app-pub-3940256099942544/5224354917 -->
+    <string name="admob_rewarded_video_adunit_id">ca-app-pub-3940256099942544/5224354917</string>
+
+    <string name="initialize_button_text">initialize</string>
+    <string name="interstitial_request_button_text">interstitial ad request</string>
+    <string name="interstitial_show_button_text">interstitial ad show</string>
+
+    <string name="rewarded_request_button_text">rewarded ad request</string>
+    <string name="rewarded_show_button_text">interstitial ad show</string>
+</resources>
