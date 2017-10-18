@@ -9,13 +9,12 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:id="@+id/options"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
@@ -34,13 +33,15 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/admob_app_id" />
+                android:text="@string/admob_app_id"
+                android:textIsSelectable="true"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/colorAccect_button"
-                android:text="@string/initialize_button_text" />
+                android:text="@string/initialize_button_text"
+                android:id="@+id/initializeButton"/>
 
             <!-- Interstitial Ad Unit ID -->
             <TextView
@@ -55,7 +56,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/admob_interstitial_adunit_id" />
+                android:text="@string/admob_interstitial_adunit_id"
+                android:textIsSelectable="true"/>
 
 
             <!-- Buttons -->
@@ -71,7 +73,8 @@
                     android:layout_weight="1"
                     android:backgroundTint="@color/colorDisable_button"
                     android:clickable="false"
-                    android:text="@string/interstitial_request_button_text" />
+                    android:text="@string/interstitial_request_button_text"
+                    android:id="@+id/interstitialReq"/>
 
                 <Button
                     android:layout_width="wrap_content"
@@ -79,7 +82,9 @@
                     android:layout_weight="1"
                     android:backgroundTint="@color/colorDisable_button"
                     android:clickable="false"
-                    android:text="@string/interstitial_show_button_text" />
+                    android:text="@string/interstitial_show_button_text"
+                    android:id="@+id/interstitialShow"/>
+
             </LinearLayout>
 
             <!-- Rewarded Ad Unit ID -->
@@ -95,7 +100,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/admob_rewarded_video_adunit_id" />
+                android:text="@string/admob_rewarded_video_adunit_id"
+                android:textIsSelectable="true"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -109,7 +115,8 @@
                     android:layout_weight="1"
                     android:backgroundTint="@color/colorDisable_button"
                     android:clickable="false"
-                    android:text="@string/rewarded_request_button_text" />
+                    android:text="@string/rewarded_request_button_text"
+                    android:id="@+id/rewardedReq"/>
 
                 <Button
                     android:layout_width="match_parent"
@@ -117,19 +124,11 @@
                     android:layout_weight="1"
                     android:backgroundTint="@color/colorDisable_button"
                     android:clickable="false"
-                    android:text="@string/rewarded_show_button_text" />
+                    android:text="@string/rewarded_show_button_text"
+                    android:id="@+id/rewardedShow"/>
             </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
-
-    <FrameLayout
-        android:id="@+id/fragmentPlaceholder"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_below="@id/options"
-        android:layout_weight="0.5">
-
-    </FrameLayout>
 
 </LinearLayout>
