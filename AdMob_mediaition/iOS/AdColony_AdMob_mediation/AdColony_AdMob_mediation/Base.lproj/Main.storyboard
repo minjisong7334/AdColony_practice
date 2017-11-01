@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="w95-qm-z9a">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Wrg-Fm-Oky">
+            <objects>
+                <navigationController id="w95-qm-z9a" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VZQ-a0-PCm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Dtt-Ld-i4G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aIt-AJ-iIJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-801" y="151"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="DJM-vg-8ks">
+                                <rect key="frame" x="21" y="69" width="333" height="237"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AdMob app ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2f-F3-ZuN">
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eqf-5T-nsA">
+                                        <rect key="frame" x="0.0" y="23.5" width="333" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qr-jF-JkE">
+                                        <rect key="frame" x="0.0" y="47" width="333" height="30"/>
+                                        <state key="normal" title="Initialize"/>
+                                        <connections>
+                                            <action selector="initializeButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m8i-Dr-UL0"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AdMob Interstitial ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruM-Ae-0fo">
+                                        <rect key="frame" x="0.0" y="80" width="333" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vjy-k0-ewi">
+                                        <rect key="frame" x="0.0" y="103.5" width="333" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ua0-K4-VCN">
+                                        <rect key="frame" x="0.0" y="127" width="333" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ps5-qj-Km5">
+                                                <rect key="frame" x="0.0" y="0.0" width="166.5" height="30"/>
+                                                <state key="normal" title="Request"/>
+                                                <connections>
+                                                    <action selector="interstitialRequestButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RW3-TK-mMJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKu-io-Gde">
+                                                <rect key="frame" x="166.5" y="0.0" width="166.5" height="30"/>
+                                                <state key="normal" title="Show"/>
+                                                <connections>
+                                                    <action selector="interstitialShowButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nvv-5c-r5h"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AdMob Rewarded ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4R-sW-AJD">
+                                        <rect key="frame" x="0.0" y="160" width="333" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dTU-nc-emh">
+                                        <rect key="frame" x="0.0" y="183.5" width="333" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xTc-8m-m2s">
+                                        <rect key="frame" x="0.0" y="207" width="333" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aey-7B-hjm">
+                                                <rect key="frame" x="0.0" y="0.0" width="166.5" height="30"/>
+                                                <state key="normal" title="Request"/>
+                                                <connections>
+                                                    <action selector="rewardedRequestButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yjx-I2-PIj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Odg-Rb-8k3">
+                                                <rect key="frame" x="166.5" y="0.0" width="166.5" height="30"/>
+                                                <state key="normal" title="Show"/>
+                                                <connections>
+                                                    <action selector="rewardedShowButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wPR-iK-oYV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DJM-vg-8ks" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="8Ll-7b-M1n"/>
+                            <constraint firstItem="DJM-vg-8ks" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="Vnr-PI-fGq"/>
+                            <constraint firstItem="DJM-vg-8ks" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aqe-Om-B9b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DJM-vg-8ks" secondAttribute="trailing" constant="5" id="gG0-Wu-adM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tjM-A7-BOG"/>
+                    <connections>
+                        <outlet property="appIdLabel" destination="eqf-5T-nsA" id="Qqo-Xs-N4v"/>
+                        <outlet property="interstitialLabel" destination="vjy-k0-ewi" id="BHG-PF-6ve"/>
+                        <outlet property="interstitialRequestButton" destination="ps5-qj-Km5" id="IXk-e4-EUx"/>
+                        <outlet property="interstitialShowButton" destination="aKu-io-Gde" id="Cyc-eE-1zQ"/>
+                        <outlet property="rewardedLabel" destination="dTU-nc-emh" id="Bna-uT-mQL"/>
+                        <outlet property="rewardedRequestButton" destination="Aey-7B-hjm" id="ikD-53-s4P"/>
+                        <outlet property="rewardedShowButton" destination="Odg-Rb-8k3" id="UNG-c8-yua"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.5999999999999996" y="150.67466266866569"/>
+        </scene>
+    </scenes>
+</document>
