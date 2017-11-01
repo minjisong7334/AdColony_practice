@@ -12,7 +12,7 @@
 |Platform|Google play service version | AdMob adapter version | AdColony version |
 |---|:----------------------------:| :--------------------:|:----------------:|
 |Android|11.2.0                      |     3.2.1.1       | 3.2.1            |
-|iOS|7.10.1 or higher            |     3.2.0             | 3.2.0            |
+|iOS|7.10.1 or higher            |     3.2.1             | 3.2.1            |
 |Unity|Android 9.8.0 or later / iOS 7.10.1 or higher | Unity doesn't need an adapter  | Android jar 3.2.1, iOS framwork 3.2  |
 
 *Install Pod and update for the iOS project
